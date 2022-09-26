@@ -1,0 +1,18 @@
+.home-route {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+@media (min-width: 3000px) {
+  .home-route {
+    font-size: 80%;
+  }
+}
+@media (min-width: 5000px) {
+  .home-route {
+    font-size: 100%;
+  }
+}

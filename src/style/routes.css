@@ -1,0 +1,52 @@
+.route-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--route {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 20rem;
+  height: 5rem;
+  /* border: 2px solid var(--main-theme); */
+  background-color: var(--main-theme);
+  font-size: 1.5rem;
+  border: transparent;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem gray;
+  /* color: var(--main-theme);
+   */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 410px) {
+  .btn--route {
+    width: 10rem;
+    height: 3rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .btn--route {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 200px) {
+  .btn--route {
+    transition: 0.2s;
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.5rem;
+    border: 2px solid var(--dark-shade);
+  }
+}

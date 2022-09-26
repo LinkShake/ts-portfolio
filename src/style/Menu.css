@@ -1,0 +1,23 @@
+.menu {
+  position: absolute;
+  top: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 20rem;
+  height: 100vh;
+  background-color: blue;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn--active {
+  background-color: black;
+}
+
+.btn--close-menu {
+  position: absolute;
+  top: 0.75rem;
+  left: 17.5rem;
+}

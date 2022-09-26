@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+/* 
+.skills-container {
+  width: 100vw;
+  height: 90vh;
+  max-height: 90vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5.71vw;
+  flex-shrink: 1;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.skill-logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  width: 20rem;
+  height: 20rem;
+}
+
+@media (max-width: 830px) {
+  .skills-container {
+    width: 95vw;
+    height: 90vh;
+    max-height: 90vh;
+  }
+}
+
+@media (max-width: 373px) {
+  .skill-logo {
+    width: 90vw;
+    height: fit-content;
+  }
+} */
