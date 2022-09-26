@@ -12,7 +12,7 @@ export const ProjectsPage: React.FC = () => {
   });
   return (
     <Fragment>
-      <TopBanner />
+      {/* <TopBanner /> */}
       <Menu />
       <div className="projects-box">
         {PROJECTS_ARR.map((project) => {

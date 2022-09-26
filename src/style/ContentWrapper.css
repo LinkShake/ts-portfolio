@@ -4,19 +4,6 @@
   width: 100%;
 }
 
-.gif {
-  width: 95%;
-  height: 100%;
-  box-shadow: 0 1px 10px 1px gray;
-}
-
-.gif-container {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-}
-
 .text-container {
   padding: 3rem;
   margin-top: 2rem;

@@ -9,20 +9,28 @@
 }
 
 .reference h1 {
-  width: 100%;
+  color: black;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: flex-start;
   padding-bottom: 2rem;
   padding-top: 1.5rem;
   font-size: 5rem;
-  font-family: var(--title-font-family);
-  box-shadow: 0 0 1rem gray;
+  background: linear-gradient(
+    to top right,
+    white 25%,
+    var(--main-theme),
+    var(--light-shade)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family: var(--title-font-family); */
+  /* box-shadow: 0 0 1rem gray; */
   font-weight: bolder;
-  text-transform: uppercase;
-  color: white;
-  border-radius: 1rem;
-  background-color: var(--main-theme);
+  /* text-transform: uppercase; */
+  /* border-radius: 1rem; */
+  /* background-color: var(--main-theme); */
 }
 
 .reference p {

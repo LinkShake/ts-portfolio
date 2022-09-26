@@ -12,7 +12,7 @@ export const SkillsPage: React.FC = () => {
   });
   return (
     <Fragment>
-      <TopBanner />
+      {/* <TopBanner /> */}
       <Menu />
       <div className="skills-box">
         {SKILLS_LIST.map((skill) => {

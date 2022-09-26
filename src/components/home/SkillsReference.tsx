@@ -10,9 +10,9 @@ export const SkillsReference: React.FC = () => {
     <div className="reference">
       <h1>Skills</h1>
       <div className="content-wrapper">
-        <div className="gif-container">
+        {/* <div className="gif-container">
           <img className="gif" src={ImagePath} alt="skills-gif"></img>
-        </div>
+        </div> */}
         <div className="text-container">
           <p>
             This section is about every language/technology, I do know. As I

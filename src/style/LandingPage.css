@@ -6,30 +6,17 @@
   flex-wrap: wrap;
   color: white;
   overflow: hidden;
-  font-family: AddCityboyNormal;
   font-weight: bolder;
   font-size: 10rem;
   width: 100vw;
   height: 100vh;
   max-width: 100vw;
   max-height: 100vh;
-  background: linear-gradient(
-    to bottom right,
-    var(--dark-shade),
-    var(--main-theme),
-    var(--light-shade)
-  );
+  background-color: black;
 }
 
 .landing-page::-webkit-scrollbar {
   display: none;
-}
-
-.landing-page p {
-  font-size: 2rem;
-  position: absolute;
-  font-weight: bold;
-  text-shadow: 0 0 0.5rem black, 0 0 0.25rem gray;
 }
 
 .landing-page span {
@@ -48,10 +35,34 @@
 
 .explore-route {
   position: absolute;
-  color: white;
+  color: var(--landing-color);
   bottom: 5vh;
-  left: 50vw;
   animation: bounce 2s infinite;
+}
+
+.infinite {
+  position: relative;
+  width: 178px;
+  height: 100px;
+}
+
+.infinite:before,
+.infinite:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border: 10px solid var(--landing-color);
+  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  transform: rotate(45deg);
+}
+
+.infinite:after {
+  left: auto;
+  right: 0;
+  transform: rotate(-135deg);
 }
 
 @keyframes bounce {
@@ -86,11 +97,6 @@
   }
 }
 
-@media (max-width: 600px) {
-  .explore-route {
-    left: 45vw;
-  }
-}
 @media (max-width: 550px) {
   .landing-page p {
     font-size: 5vw;
@@ -106,12 +112,6 @@
 @media (max-width: 415px) {
   .landing-page span {
     font-size: 3rem;
-  }
-}
-
-@media (max-width: 260px) {
-  .explore-route {
-    left: 40vw;
   }
 }
 
@@ -141,7 +141,6 @@
 
 @media (max-width: 200px) {
   .explore-route {
-    left: 35vw;
     font-size: 8vw;
   }
 }

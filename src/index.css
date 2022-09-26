@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: auto;
+  background-color: var(--default-background);
 }
 
 @media (min-width: 3000px) {

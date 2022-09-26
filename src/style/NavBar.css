@@ -22,6 +22,6 @@
 .btn--menu-el {
   height: 3px;
   width: 100%;
-  background-color: black;
+  background-color: gray;
   border-radius: 10px;
 }
