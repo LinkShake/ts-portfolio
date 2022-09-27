@@ -19,6 +19,19 @@
   height: 21px;
 }
 
+.btn--menu:active {
+  animation: rotate 0.1s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .btn--menu-el {
   height: 3px;
   width: 100%;

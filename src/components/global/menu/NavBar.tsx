@@ -12,7 +12,7 @@ export const NavBar: React.FC<NavBarProps> = ({
 }) => {
   return (
     <nav className="menu--nav">
-      <a className="btn--menu" onClick={() => changeMenuState(true)}>
+      <a className="btn--menu" onClick={() => changeMenuState(!menuState)}>
         <span className="btn--menu-el"></span>
         <span className="btn--menu-el"></span>
         <span className="btn--menu-el"></span>

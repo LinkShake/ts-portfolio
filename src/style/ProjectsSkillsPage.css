@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   width: 100vw;
   height: 90vh;
+  /* position: absolute; */
+  transform: translateY(5rem);
+  margin-bottom: 10vh;
   gap: 0;
 }
 
@@ -24,10 +27,9 @@
   padding: 0.5vw;
   margin: 2rem;
   flex-wrap: wrap;
-  border-right: 2px solid var(--main-theme);
-  border-left: 2px solid var(--main-theme);
-  box-shadow: 0 1px 10px 1px gray;
-  border-radius: 1vw;
+  background-color: var(--card-color);
+  /* box-shadow: 0 1px 10px 1px gray; */
+  /* border-radius: 5px; */
   width: 20rem;
   min-width: 20rem;
   height: 40rem;
@@ -44,7 +46,8 @@
   .project-card:hover,
   .skill-card:hover {
     transition: 0.2s;
-    scale: 1.05;
+    /* scale: 1.05; */
+    background-color: gray;
   }
 }
 
@@ -77,6 +80,8 @@
   .project-card,
   .skill-card {
     margin: 3vw;
+    margin-right: 1vw;
+    margin-left: 8vw;
   }
 }
 

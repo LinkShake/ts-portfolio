@@ -11,35 +11,41 @@ export const Menu: React.FC = () => {
 
   if (menuState)
     return (
-      <div className="menu">
-        <Link to="/home">
-          <button
+      <>
+        <NavBar menuState={menuState} changeMenuState={setMenuState} />
+        <div className="menu">
+          <Link to="/home">
+            <button
+              onClick={() => setMenuState(false)}
+              className={`${newRoute === "/home" && "btn--active"}`}
+            >
+              Home
+            </button>
+          </Link>
+          <Link to="/skills">
+            <button
+              onClick={() => setMenuState(false)}
+              className={`${newRoute === "/skills" && "btn--active"}`}
+            >
+              Skills
+            </button>
+          </Link>
+          <Link to="/projects">
+            <button
+              onClick={() => setMenuState(false)}
+              className={`${newRoute === "/projects" && "btn--active"}`}
+            >
+              Projects
+            </button>
+          </Link>
+          {/* <button
             onClick={() => setMenuState(false)}
-            className={`${newRoute === "/home" && "btn--active"}`}
+            className="btn--close-menu"
           >
-            Home
-          </button>
-        </Link>
-        <Link to="/skills">
-          <button
-            onClick={() => setMenuState(false)}
-            className={`${newRoute === "/skills" && "btn--active"}`}
-          >
-            Skills
-          </button>
-        </Link>
-        <Link to="/projects">
-          <button
-            onClick={() => setMenuState(false)}
-            className={`${newRoute === "/projects" && "btn--active"}`}
-          >
-            Projects
-          </button>
-        </Link>
-        <button onClick={() => setMenuState(false)} className="btn--close-menu">
-          &times;
-        </button>
-      </div>
+            &times;
+          </button> */}
+        </div>
+      </>
     );
   return <NavBar menuState={menuState} changeMenuState={setMenuState} />;
 };

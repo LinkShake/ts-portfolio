@@ -24,6 +24,7 @@
 }
 
 .initial-page h1 {
+  line-height: 1.25;
   display: inline-block;
   padding-top: 2rem;
   padding-bottom: 4px;

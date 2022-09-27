@@ -1,9 +1,13 @@
 .pages-footer {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   font-size: 0.7rem;
   padding: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  /* bottom: 2rem; */
 }
 
 @media (max-width: 347px) {

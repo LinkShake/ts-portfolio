@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: auto;
   background-color: var(--default-background);
+  letter-spacing: 0.2px;
 }
 
 @media (min-width: 3000px) {
@@ -35,5 +36,6 @@ code {
 @media (orientation: landscape) {
   body {
     overflow: auto;
+    overflow-x: hidden;
   }
 }

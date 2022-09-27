@@ -1,20 +1,39 @@
 .menu {
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   top: 0;
   display: flex;
   margin: 0;
   padding: 0;
-  width: 20rem;
-  height: 100vh;
-  background-color: blue;
+  padding-top: 100px;
+  width: fit-content;
+  height: 110vh;
+  background-color: #26292b;
+  /* border-right: 2px solid black; */
+  /* box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem white; */
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  /* gap: 50px; */
   flex-direction: column;
+  text-align: center;
+  text-justify: center;
+}
+
+.menu button {
+  cursor: pointer;
+  width: 20rem;
+  height: 3.5rem;
+  padding: 1rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  /* text-transform: uppercase; */
+  color: white;
+  font-weight: bold;
 }
 
 .btn--active {
-  background-color: black;
+  background-color: var(--card-color) !important;
 }
 
 .btn--close-menu {

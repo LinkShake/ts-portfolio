@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom";
-import ImagePath from "../../images/projects.gif";
 
 export const ProjectsReference: React.FC = () => {
   return (
     <div className="reference">
       <h1>Projects</h1>
       <div className="content-wrapper">
-        {/* <div className="gif-container">
-          <img className="gif" src={ImagePath} alt="projects-gif"></img>
-        </div> */}
         <div className="text-container">
           <p>
             If you're still here, well, I hope because you're interested in what
