@@ -8,21 +8,24 @@ import { LandingPage } from "./routes/LandingPage";
 import { SkillsPage } from "./routes/SkillsPage";
 import { ProjectsPage } from "./routes/ProjectsPage";
 import { PageNotFound } from "./routes/PageNotFound";
+import { FontFamily } from "./contexts/FontFamily";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/home" element={<App />} />
-        <Route path="/skills" element={<SkillsPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <FontFamily.Provider value="SF Mono">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/home" element={<App />} />
+          <Route path="/skills" element={<SkillsPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </FontFamily.Provider>
   </React.StrictMode>
 );
 

@@ -1,3 +1,5 @@
+import { ProjectProps } from "../interfaces/ProjectsProps";
+
 export const PROGRAMMING_LANGUAGES = [
   {
     technologyName: "Html5",
@@ -30,11 +32,15 @@ export const SKILLS_LIST = PROGRAMMING_LANGUAGES.concat(TECHNOLOGIES);
 export const LINKS = [
   { profile: "Github", url: "https://github.com/LinkShake" },
 ];
-export const PROJECTS_ARR = [
+export const PROJECTS_ARR: Array<ProjectProps> = [
   {
-    projectName: "Forkify App",
-    description: `Forkify is a web app realized with plain vanilla js and based on the MVC architecture. The app allows users to search for recipes, bookmark them, save the recipe's ingredients, plan different recipes for different days and also upload their own ones. The original idea is of Jonas Schmedtmann but I improved the app personally quite a bit, adding features such as improved adding recipes experience, cart, saving dates, full mobile support and so on and so forth...`,
-    liveSite: "https://forkify-app-linkshake.netlify.app/",
-    githubRepo: "https://github.com/LinkShake/forkify-app",
+    project: {
+      projectName: "Forkify App",
+      description: `Forkify is a web app realized with plain vanilla js and based on the MVC architecture. The app allows users to search for recipes, bookmark them, save the recipe's ingredients, plan different recipes for different days and also upload their own ones. The original idea is of Jonas Schmedtmann but I improved the app personally quite a bit, adding features such as improved adding recipes experience, cart, saving dates, full mobile support and so on and so forth...`,
+      liveSite: "https://forkify-app-linkshake.netlify.app/",
+      githubRepo: "https://github.com/LinkShake/forkify-app",
+      imgSrc: "forkify",
+      techStack: ["javascript", "html", "scss"],
+    },
   },
 ];
