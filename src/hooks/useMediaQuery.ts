@@ -29,7 +29,7 @@ export const useMediaQuery = () => {
         window.removeEventListener(e, onChangeWidth)
       );
     };
-  });
+  }, [widthSize]);
 
   return widthSize;
 };

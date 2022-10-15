@@ -25,13 +25,14 @@
 .project-card,
 .skill-card {
   /* padding: 0.5vw; */
-  margin: 2rem;
+  /* margin: 2rem; */
+  margin-left: 2rem;
   flex-wrap: wrap;
   background-color: var(--card-color);
   /* box-shadow: 0 1px 10px 1px gray; */
   border-radius: 2rem;
-  width: 40rem;
-  min-width: 40rem;
+  /* width: 40rem; */
+  /* min-width: 40rem; */
   height: fit-content;
   overflow: auto;
   transition: 0.2s;
@@ -40,6 +41,13 @@
 .project-card::-webkit-scrollbar,
 .skill-card::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 725px) {
+  .project-card,
+  .skill-card {
+    width: 50vw !important;
+  }
 }
 
 @media (min-width: 350px) {

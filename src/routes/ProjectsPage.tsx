@@ -11,12 +11,12 @@ export const ProjectsPage: React.FC = () => {
   });
   return (
     <Fragment>
-      <Menu />
-      <div className="projects-box">
-        {PROJECTS_ARR.map(({ project }) => {
-          return <ProjectCard project={project} key={project.projectName} />;
-        })}
-      </div>
+      {/* <Menu /> */}
+      {/* <div className="projects-box"> */}
+      {PROJECTS_ARR.map(({ project }) => {
+        return <ProjectCard project={project} key={project.projectName} />;
+      })}
+      {/* </div> */}
       <Footer />
     </Fragment>
   );
