@@ -1,4 +1,5 @@
 import "../../style/InitialPage.css";
+import { DrawerMenu } from "../global/menu/Drawer";
 import { Menu } from "../global/menu/Menu";
 
 export const InitialPage: React.FC = () => {
@@ -6,7 +7,7 @@ export const InitialPage: React.FC = () => {
 
   return (
     <>
-      <Menu />
+      <DrawerMenu />
       <div className="initial-page">
         <h1>{introductionText}</h1>
         <h2>

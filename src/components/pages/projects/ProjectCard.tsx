@@ -32,26 +32,27 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   const [maxHeight, setMaxHeight] = useState<string>("40rem");
 
   useEffect(() => {
-    const log = () => {
+    const onChangeWidth = () => {
       const width = window.innerWidth;
       if (width <= 768) {
         setBoxWidth("30rem");
       } else if (width <= 500) {
         setBoxWidth("25rem");
       } else if (width <= 360) {
-        setBoxWidth("20rem");
+        setBoxWidth("18rem");
       } else if (width <= 300) {
         setBoxWidth("100vw");
       }
     };
-    window.addEventListener("resize", log);
-    return () => window.removeEventListener("resize", log);
+    window.addEventListener("resize", onChangeWidth);
+    return () => window.removeEventListener("resize", onChangeWidth);
   }, [boxWidth]);
 
   return (
     <>
       <Box
         maxH={maxHeight}
+        marginTop="20px"
         // minW="40rem"
         w="fit-content"
         maxW="40rem"
@@ -64,6 +65,7 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
         fontFamily={fontFamily}
         className="project-card"
         onPointerEnter={() => {
+          console.log(queryWidth);
           if (queryWidth === "normal") {
             setIsReferenceVisible(true);
             setMaxHeight("none");
@@ -72,7 +74,7 @@ export const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
         onPointerLeave={() => {
           if (queryWidth === "normal") {
             setIsReferenceVisible(false);
-            setMaxHeight("none");
+            setMaxHeight("40rem");
           }
         }}
       >

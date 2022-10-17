@@ -5,6 +5,7 @@ import { SKILLS_LIST } from "../shared/config";
 import { Footer } from "../components/global/Footer";
 import "../style/TopBanner.css";
 import { Menu } from "../components/global/menu/Menu";
+import { DrawerMenu } from "../components/global/menu/Drawer";
 
 export const SkillsPage: React.FC = () => {
   useLayoutEffect(() => {
@@ -13,7 +14,7 @@ export const SkillsPage: React.FC = () => {
   return (
     <Fragment>
       {/* <TopBanner /> */}
-      <Menu />
+      <DrawerMenu />
       <div className="skills-box">
         {SKILLS_LIST.map((skill) => {
           return <SkillsCard skill={skill} key={skill.technologyName} />;

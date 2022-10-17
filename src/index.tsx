@@ -9,6 +9,7 @@ import { SkillsPage } from "./routes/SkillsPage";
 import { ProjectsPage } from "./routes/ProjectsPage";
 import { PageNotFound } from "./routes/PageNotFound";
 import { FontFamily } from "./contexts/FontFamily";
+import { BackgroundColor } from "./contexts/BackgroundColor";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -16,20 +17,19 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <FontFamily.Provider value="SF Mono">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/home" element={<App />} />
-          <Route path="/skills" element={<SkillsPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <BackgroundColor.Provider value="#1a1a1a">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/home" element={<App />} />
+            <Route path="/skills" element={<SkillsPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </BackgroundColor.Provider>
     </FontFamily.Provider>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

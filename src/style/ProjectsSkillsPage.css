@@ -49,30 +49,30 @@
     width: 50vw !important;
   }
 }
-
+/* 
 @media (min-width: 350px) {
   .project-card:hover,
   .skill-card:hover {
     transition: 0.2s;
-    /* scale: 1.05; */
+    scale: 1.05;
     background-color: gray;
   }
-}
+} */
 
 .project-card h2,
 .skill-card h2 {
-  padding: 2rem;
+  /* padding: 2rem; */
   padding-bottom: 0;
 }
-
+/* 
 .project-card p,
 .skill-card p {
   padding: 2rem;
-}
+} */
 
 .project-card a,
 .skill-card a {
-  padding: 1rem;
+  /* padding: 1rem; */
   font-weight: bolder;
 }
 
