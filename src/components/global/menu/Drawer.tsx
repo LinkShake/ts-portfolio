@@ -29,6 +29,7 @@ export const DrawerMenu: React.FC = () => {
           onClose();
         }
       }}
+      style={{ zIndex: "3" }}
     >
       <Button
         onClick={onOpen}
@@ -41,6 +42,7 @@ export const DrawerMenu: React.FC = () => {
           fontFamily: "SF Mono",
           fontWeight: "bold",
           textTransform: "uppercase",
+          zIndex: "3",
         }}
       >
         Menu
