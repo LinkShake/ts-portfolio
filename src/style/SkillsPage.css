@@ -1,5 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  gap: 2vh;
+  padding: 3.5vw;
+}
+
+.skills-description {
+  font-size: 24px;
+}
+
+.skill {
+  font-size: 2rem;
+}
+
+@media (max-width: 550px) {
+  .skills-description {
+    font-size: 18px;
+  }
+
+  .skill {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .skills-description {
+    font-size: 5vw;
+  }
+  .skills {
+    font-size: 2vw;
+  }
+}
+
 /* 
 .skills-container {
   width: 100vw;

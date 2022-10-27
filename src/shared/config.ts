@@ -29,6 +29,12 @@ export const TECHNOLOGIES = [
   },
 ];
 export const SKILLS_LIST = PROGRAMMING_LANGUAGES.concat(TECHNOLOGIES);
+export const SKILLS = [
+  { skill: "Frontend", percent: 100 },
+  { skill: "Backend", percent: 80 },
+  { skill: "React.js", percent: 100 },
+  { skill: "Node.js", percent: 90 },
+];
 export const LINKS = [
   { profile: "Github", url: "https://github.com/LinkShake" },
 ];
